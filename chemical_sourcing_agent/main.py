@@ -76,7 +76,8 @@ def run(query: str):
     # -----------------------------------------------------------------------
     # Step 1: Load environment variables and configuration
     # -----------------------------------------------------------------------
-    load_dotenv()  # reads .env file into os.environ
+    env_path = Path(__file__).parent / ".env"
+    load_dotenv(dotenv_path=env_path)  # reads .env file from agent directory
 
     # Check that required API keys are present before doing any work.
     missing = [k for k in ("TAVILY_API_KEY", "AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY")

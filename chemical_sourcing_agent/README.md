@@ -21,7 +21,7 @@ Built as a **learning example** for LangChain LCEL chains + Amazon Bedrock + Tav
    pip install -r requirements.txt
    ```
 
-2. Create a `.env` file in this directory with your credentials:
+2. Create a `.env` file in the `chemical_sourcing_agent/` directory with your credentials:
    ```
    TAVILY_API_KEY=your_tavily_key
    AWS_ACCESS_KEY_ID=your_aws_key
@@ -246,7 +246,7 @@ The CSV contains these columns:
 ## Common Issues
 
 **`Missing required environment variables`**
-→ Make sure `.env` exists in the project root and all three keys are set.
+→ Make sure `.env` exists in the `chemical_sourcing_agent/` directory and all three keys are set.
 
 **`No product records were extracted`**
 → Tavily may not have returned relevant content for those URLs.
