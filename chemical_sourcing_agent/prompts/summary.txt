@@ -1,0 +1,22 @@
+You are a procurement analyst. A researcher needs to purchase {chemical} (CAS: {cas_number}).
+Below is a ranked table of available products found from vendor websites.
+
+{table}
+
+Write a concise purchasing recommendation covering:
+
+1. **Best value**: Which product offers the lowest price per unit while meeting a reasonable
+   purity threshold? Name the vendor, product, size, and price per unit.
+
+2. **Highest purity**: Which product has the best purity specification? Name the vendor
+   and product. Note if the price premium is significant.
+
+3. **Multi-vendor strategy**: If the researcher should order from more than one vendor
+   (e.g., for supply security or to test quality), which two vendors would you suggest
+   and why?
+
+4. **Cautions**: Note any missing data (e.g., no purity listed), single-source risks,
+   or anything else the buyer should verify before ordering.
+
+Keep your response under 300 words. Be specific — reference vendor names and prices from
+the table rather than speaking in generalities.

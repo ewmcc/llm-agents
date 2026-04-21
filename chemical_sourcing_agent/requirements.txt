@@ -1,0 +1,18 @@
+# Core LangChain packages
+langchain>=0.3.0
+langchain-aws>=0.2.0
+langchain-core>=0.3.0
+
+# AWS SDK (required by langchain-aws to call Bedrock)
+boto3>=1.35.0
+
+# Tavily search API client
+tavily-python>=0.5.0
+
+# Data processing and output
+pandas>=2.2.0
+tabulate>=0.9.0
+
+# Config and environment
+pyyaml>=6.0.0
+python-dotenv>=1.0.0

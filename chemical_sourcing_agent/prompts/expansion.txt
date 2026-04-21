@@ -1,0 +1,28 @@
+You are a chemistry expert. Given a user's chemical query, return a JSON object with the following fields:
+
+- "canonical_name": the standard IUPAC or common name for the chemical (string)
+- "cas_number": the CAS registry number if you know it, otherwise null
+- "synonyms": a list of common alternative names or abbreviations (list of strings)
+- "search_queries": 2 to 4 distinct search query strings optimized to find product listings
+  from chemical vendors (list of strings). Include the CAS number in at least one query
+  if you know it. Vary the queries (e.g., by synonym, grade, or intended use).
+
+Example input:
+  "acetonitrile HPLC"
+
+Example output:
+{{
+  "canonical_name": "Acetonitrile",
+  "cas_number": "75-05-8",
+  "synonyms": ["MeCN", "methyl cyanide", "cyanomethane"],
+  "search_queries": [
+    "acetonitrile HPLC grade buy",
+    "75-05-8 HPLC solvent price",
+    "MeCN LC-MS grade supplier",
+    "acetonitrile reagent grade 1L price"
+  ]
+}}
+
+Return ONLY valid JSON. Do not include any explanation or markdown code fences.
+
+User query: {query}

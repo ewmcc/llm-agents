@@ -1,0 +1,20 @@
+# Amazon Bedrock model to use for all LLM calls.
+# Must be enabled in your AWS account under Bedrock > Model access.
+bedrock_model_id: "global.anthropic.claude-haiku-4-5-20251001-v1:0"
+
+# AWS region where Bedrock is invoked.
+region: "us-east-1"
+
+# How many search results Tavily returns per query.
+# More results = more coverage but slower and more expensive.
+max_search_results: 8
+
+# Seconds to wait for a web page to respond before giving up.
+scrape_timeout: 30
+
+# Maximum characters of page text sent to the LLM for extraction.
+# Keeps token costs predictable — most product info is near the top anyway.
+max_page_chars: 4000
+
+# Folder where CSV and markdown reports are saved (created if missing).
+output_dir: "outputs"
