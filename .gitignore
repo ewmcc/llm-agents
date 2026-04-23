@@ -1,12 +1,8 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
-*.py[cod]
-*$py.class
 
 # Virtual environments
 venv/
-env/
-ENV/
 .venv/
 
 # Environment variables (NEVER commit .env with API keys!)
@@ -23,12 +19,3 @@ outputs/
 *.swo
 *~
 .DS_Store
-
-# Distribution / packaging
-build/
-dist/
-*.egg-info/
-
-# pytest
-.pytest_cache/
-.coverage
